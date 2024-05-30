@@ -34,4 +34,3 @@ Example of Helios-Web project using Vite with additional changes for helios-web-
         
 6. npm install
 7. npm run dev
-![image](https://github.com/tanvii-ii/vite-heliosweb-template-main-ui/assets/129692615/6ad9e2dc-7b3e-4e3e-ac5e-b791ca985951)
