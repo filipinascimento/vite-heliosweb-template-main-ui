@@ -1,5 +1,37 @@
-# vite-heliosweb-template
+# vite-heliosweb-template-main-ui
+Example of Helios-Web project using Vite with additional changes for helios-web-ui.
 
-Example of Helios-Web project using Vite.
+# Setup:
+1. Install nodejs/npm
+2. Ensure helios-web-ui bundled components (drawer-component.es, drawer-component.umd) are located in the dist folder
+3. Include a div in index.html for the drawer component
 
-Under development. More information to come soon.
+   ```
+   <div id="drawer-container"></div>
+   ```
+   
+5. In main.js:
+     1. Import react and the drawer component:
+
+         ```
+         import React from 'react';
+         import ReactDOM from 'react-dom/client';
+         import DrawerComponent from './dist/drawer-component.es';
+         ```
+
+     2. Declare drawer props to send the helios object and render the drawer component:
+  
+        ```
+          const drawerProps = {
+            helios,
+          };
+
+          const root = ReactDOM.createRoot(document.getElementById('drawer-container'));
+          root.render(
+            React.createElement(DrawerComponent, drawerProps)
+          );
+        ```
+        
+6. npm install
+7. npm run dev
+![image](https://github.com/tanvii-ii/vite-heliosweb-template-main-ui/assets/129692615/6ad9e2dc-7b3e-4e3e-ac5e-b791ca985951)
